@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="stylecycleup.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/izd8tpx.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-JhdKqqcY+Y8kHXWNLASvQmylD1fZpkL+FzvnW9XtKFyzyDnyyjooQ8/n+fWgwsBkZpDKnCFTq3bHfmSyOv9/wA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <section id="section-about1">
+      <div class="container">
+        <div class="navbar">
+          <img class="logo" src="../ui-ux/assets/finaal logo.jpg" alt="" />
+          <nav>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="aboutcycleup.html">Over ons</a></li>
+              <li><a href="contactcycleup.html">Contact</a></li>
+              <li><a href="portfoliocycleup.html">Portfolio</a></li>
+            </ul>
+          </nav>
+          <script>
+            document
+              .querySelector(".hamburger")
+              .addEventListener("click", function () {
+                this.classList.toggle("menu-active");
+                document.querySelector(".menu").classList.toggle("menu-active");
+              });
+          </script>
+        </div>
+
+        <div class="row-about">
+          <div class="col-1about">
+            <h2>Over ons.</h2>
+            <p>
+              Bij Cycle Up zijn we gepassioneerd door het creëren van fietsen
+              die niet alleen goed zijn voor het milieu, maar ook voor de
+              fietser. <br />
+              Onze innovatieve technologie zorgt ervoor dat onze fietsen
+              zichzelf opladen tijdens het rijden, net als
+              <span class="hybride"> een hybride auto. </span>
+            </p>
+          </div>
+
+          <div class="col-2">
+            <img src="../ui-ux/assets/blad.png" class="blad1 rotating-image" />
+            <img src="../ui-ux/assets/man about.png" class="man" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="about.js"></script>
+
+    <section id="section-about2">
+      <div class="section-about2">
+        <div class="content">
+          <h2 class="title">Bekijk onze infographic!</h2>
+          <p class="text">
+            Ervaar een naadloze en dynamische fietservaring met zelfopladende
+            elektrische fietsen die gebruikmaken van regeneratief remmen.
+            Telkens wanneer je remt, zet de fiets de energie om in
+            elektriciteit, waardoor de batterij wordt opgeladen en je rijbereik
+            wordt vergroot.
+          </p>
+        </div>
+        <iframe width="500" height="280" src="https://www.youtube.com/embed/sla2knPlS1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="section-about3"> 
+      <div class="left-column">
+        <img src="../ui-ux/assets/portfolio.jpeg" alt="Image" />
+      </div>
+      <div class="right-column-about">
+        <h2>Ontdek wat ik maak.</h2>
+        <button type="button" class="ontdek">
+          <a href="portfoliocycleup.html">Portfolio</a>
+        </button>
+      </div>
+    </section>
+    <script src="check.js"></script>
+
+    <footer id="footer">
+      <div class="footer-column">
+        <h4>Home</h4>
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <a href="aboutcycleup.html">About</a>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <a href="https://www.instagram.com/cycleup2023/">Instagram</a>
+        <p>+32 468 27 00 64</p>
+      </div>
+      <div class="footer-column">
+        <h4>Portfolio</h4>
+        <a href="portfoliocycleup.html">Video</a>
+      </div>
+    </footer>
+  </body>
+</html>

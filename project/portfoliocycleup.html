@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylecycleup.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/izd8tpx.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-JhdKqqcY+Y8kHXWNLASvQmylD1fZpkL+FzvnW9XtKFyzyDnyyjooQ8/n+fWgwsBkZpDKnCFTq3bHfmSyOv9/wA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <script>
+      // Disable automatic scroll restoration
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <section id="section-about1">
+      <div class="container">
+        <div class="navbar">
+          <img class="logo" src="../ui-ux/assets/finaal logo.jpg" alt="" />
+          <nav>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="aboutcycleup.html">About</a></li>
+              <li><a href="contactcycleup.html">Contact</a></li>
+              <li><a href="portfoliocycleup.html">Portfolio</a></li>
+            </ul>
+          </nav>
+          <script>
+            document.querySelector('.hamburger').addEventListener('click', function() {
+              this.classList.toggle('menu-active');
+              document.querySelector('.menu').classList.toggle('menu-active');
+            });
+          </script>
+        </div>
+
+        <div class="row-about">
+          <div class="col-1portfolio">
+            <h2>Portfolio.</h2>
+            <p>
+              Ik ben Viktor, oprichter van Cycle up. Buiten Cycle up houd ik me
+              ook bezig met grafische projecten. Ik heb ook een instagram
+              account <a style="text-decoration: none;" href="https://www.instagram.com/logofi_/">@logofi_</a> waar ik dit allemaal deel!
+            </p>
+            <img id="blad" src="../ui-ux/assets/blad.png" alt="Sliding Image">
+            <div class="linkportfolio">
+              <a href="#section-about2p">video</a>
+              <a href="#section-about3p">galerij</a>
+            </div>
+          </div>
+
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-about2p">
+      <h2>Video.</h2>
+      <p>Mijn video voor mijn GIP gaat ook over Cycle up.
+        Dit is een  korte fictiefilm over iemand dat worstelt met depressie
+        maar uiteidenlijk de weg in het leven terug vind door te gaan fietsen.
+        </p>
+      <div class="video-wrapper2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V1MKKC9KjRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="section-about3p">
+      <h2>Galerij.</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto10.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto11.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto13.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto14.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto15.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto02.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto03.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto06.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../ui-ux/assets/13_viktorromer_6mma_foto12.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <footer id="footer">
+      <div class="footer-column">
+        <h4>Home</h4>
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="footer-column">
+        <h4>About</h4>
+        <a href="aboutcycleup.html">About</a>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <a href="https://www.instagram.com/cycleup2023/">Instagram</a>
+        <p>+32 468 27 00 64</p>
+      </div>
+      <div class="footer-column">
+        <h4>Portfolio</h4>
+        <a href="portfoliocycleup.html">Video</a>
+      </div>
+    </footer>
+    
+  </body>
+</html>
